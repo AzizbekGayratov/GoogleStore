@@ -1,0 +1,59 @@
+.holiday {
+    padding-top: 20px;
+
+    &__title {
+        color: #3c4043;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0.5px;
+        margin-bottom: 26px;
+    }
+
+    &__text {
+        color: #3c4043;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        color: #1967d2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__content {
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 24px;
+    }
+
+    &__block {
+        border-radius: 28px;
+        background-color: #f8f9fa;
+    }
+}
+
+@media screen and (min-width:660px) {
+    .holiday{
+        &__block{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__content{
+            padding-bottom: 16px;
+            max-width: 390px;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .holiday__block{
+        padding-right: 100px;
+    }
+}
